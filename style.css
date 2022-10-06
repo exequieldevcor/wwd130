@@ -30,6 +30,7 @@ p {
     font-size: 1.25em;
     margin-top: 35px;
     line-height: 1.5em;
+    width: 100%;
 }
 
 .main-para {
@@ -38,7 +39,7 @@ p {
 }
 
 img {
-    width: 100%;
+    width: 80%;
 }
 
 div {
