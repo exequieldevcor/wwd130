@@ -4,11 +4,12 @@ body {
 
 #content {
     max-width: 1600px ;
+    width: auto;
     margin: 0 auto;
 }
 
 header {
-    background-color: #a8dadc; 
+    background-color: #b7c2c9; 
 }
 
 .logo {
@@ -20,8 +21,16 @@ header {
     width: 80px;
 }
 
+#hero-img{
+    display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav a {
     text-align: center; 
+    background-color: #a8dadc;
     color: #e63946;
     text-decoration: none;
 }
@@ -61,13 +70,13 @@ h2 {
 }
 
 .book {
-    background-color: #F1FAEE; 
+    background-color: #a8dadc;
     color: #e63946;
     text-decoration: none;
 }
 
 .join{
-    background-color: #b7c2c9;
+    background-color: #a8dadc;
     color: #e63946; 
     text-decoration: none;
 }
