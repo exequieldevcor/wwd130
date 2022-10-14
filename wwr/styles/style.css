@@ -15,10 +15,12 @@ body {
 
 header {
     background-color:#b7c2c9; 
+    height: 170px;
 }
 
 .logo {
     background-color: black;
+    height: 100px;
     width: 100px;
     border-radius: 250px;
     margin: 10px 20px 20px 10px;
