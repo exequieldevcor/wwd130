@@ -1,14 +1,18 @@
+body{
+    margin: 0;
+}
 
 nav {
     text-align: center;
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
 }
 
 a {
     font-size: 1.5em;
     color: white;
     margin: 40px;
+    padding: 25px;
 }
 
 #active {
@@ -24,6 +28,7 @@ a:hover {
 h1 {
     text-align: center;
     color: steelblue;
+    margin: 50px 0;
 }
 img {
     width: 80%;
@@ -54,5 +59,6 @@ nav, footer {
 
 footer p{
     font-size: 20px;
+    padding: 25px;
     margin: 20px auto;
 }
