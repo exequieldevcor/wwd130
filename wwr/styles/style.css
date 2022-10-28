@@ -62,8 +62,8 @@ body {
     background-color: #b7c2c9;
     height: 60px;
     width: 60px;
-    border-radius: 250px;
-    margin: 0px 0px 0px 0px;
+    border-radius: 60px;
+    
 }
 
 .icon {
@@ -165,10 +165,9 @@ body {
 }
 
 header {
-    background-color:black; 
+    background-color:#b7c2c9; 
     display: grid;
     grid-template-columns: 150px auto;
-    grid-template-rows: 80px;
     opacity: .6;
 }
 
@@ -181,7 +180,7 @@ nav {
 nav a {
     text-align: center; 
     background-color: inherit;
-    color: rgb(219, 60, 60);
+    color: black;
     text-decoration: none;
     font-size: 20px;
     padding: 15px 30px;
