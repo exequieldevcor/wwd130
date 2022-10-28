@@ -168,7 +168,7 @@ header {
     background-color:#b7c2c9; 
     display: grid;
     grid-template-columns: 150px auto;
-    opacity: .6;
+    opacity: .7;
 }
 
 nav {
@@ -180,7 +180,7 @@ nav {
 nav a {
     text-align: center; 
     background-color: inherit;
-    color: black;
+    color: #e63946;
     text-decoration: none;
     font-size: 20px;
     padding: 15px 30px;
