@@ -352,6 +352,35 @@ footer p a:hover {
     margin-left: 20px;
 }
 
+header {
+    background-color:#b7c2c9; 
+    display: grid;
+    grid-template-columns: 150px auto;
+    opacity: .7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-align: center; 
+    background-color: inherit;
+    color: #e63946;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #e63946;
+    color: #b7c2c9;   
+}
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
