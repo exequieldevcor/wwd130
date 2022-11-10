@@ -380,7 +380,52 @@ nav a:hover {
     color: #b7c2c9;   
 }
 
+main section {
+    text-align: center;   
+}
 
+main section img {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #e63946;
+    margin: 0;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer, a {
+    background-color: #b7c2c9; 
+    color: #e63946;
+    text-decoration: none;
+}
+
+footer p {
+    font-family: Abyssinica , Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    background-color:#b7c2c9;
+    color: #e63946;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    background-color: #e63946;
+    color: #b7c2c9;   
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
