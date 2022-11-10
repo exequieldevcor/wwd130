@@ -237,7 +237,121 @@ footer p a:hover {
     text-decoration: underline;
     background-color: #e63946;
     color: #b7c2c9;   
-}    
+}
+
+/* Css for the rivers page */
+
+#river-content {
+    max-width: 1600px ;
+    width: auto;
+    margin: 0 auto;
+}
+
+#river {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#river-img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#river-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    
+}
+
+#river-msg h4 {
+    text-align: center;
+    color: white;
+    font-family: Abyssinica , Helvetica, sans-serif;
+}
+
+
+.book {
+    background-color: #659fc4;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover {
+    background-color: #e63946;
+    color: #b7c2c9;    
+} 
+
+.rivers-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.idaho-card {
+    grid-row: 1/2;
+    display: flex;
+    margin-top: 100px;
+}
+
+.utah-card {
+    grid-row: 2/3;
+    display: flex;
+    margin-top: 100px;
+}
+
+.arizona-card {
+    grid-row: 3/4;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: auto;
+}
+
+.waters-img {
+    width: 350px;
+    height: 500px;
+    border: 10px solid #b7c2c9/*#e63946*/;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.waters-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.text {
+    height: 300x;
+    width: 100%;
+    margin:0 ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:#659fc4;
+}
+
+.text h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.text p {
+    color: black;
+    font-family: Abyssinica , Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
