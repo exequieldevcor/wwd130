@@ -471,11 +471,12 @@ footer p a:hover {
 
     .idaho-card, .utah-card, .arizona-card {
         margin: 50px auto;
-        width: 60%;
+        width: 40%;
     }
 
     .text {
         display: block;
+        width: 40%;
     }
     #background {
         display: none;
