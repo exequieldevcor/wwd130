@@ -324,6 +324,7 @@ footer p a:hover {
     border: 10px solid #b7c2c9/*#e63946*/;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    position: relative;
 }
 
 .waters-img:hover {
@@ -340,7 +341,6 @@ footer p a:hover {
     align-items: center;
     background-color:hsl(203, 45%, 58%);
     position: relative;
-    display: table;
 }
 
 .text h2 {
@@ -355,7 +355,6 @@ footer p a:hover {
     font-size: 1.2rem;
     padding: 0 1rem;
     position: absolute;
-    display: table-cell;
     vertical-align: middle;
 }
 
