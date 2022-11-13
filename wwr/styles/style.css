@@ -294,7 +294,8 @@ footer p a:hover {
 
 .rivers-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr;
 }
 
 .idaho-card {
@@ -317,6 +318,7 @@ footer p a:hover {
 }
 
 .waters-img {
+    /*display: block;*/
     width: 350px;
     height: 500px;
     border: 10px solid #b7c2c9/*#e63946*/;
@@ -337,6 +339,8 @@ footer p a:hover {
     justify-content: center;
     align-items: center;
     background-color:#659fc4;
+    /*display: table;*/
+    position: relative;
 }
 
 .text h2 {
@@ -348,8 +352,10 @@ footer p a:hover {
 .text p {
     color: black;
     font-family: Abyssinica , Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 20px;
+    /*display: table-cell;*/
+    position: absolute;
 }
 
 header {
