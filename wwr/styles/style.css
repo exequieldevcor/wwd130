@@ -294,8 +294,10 @@ footer p a:hover {
 
 .rivers-grid {
     display: grid;
-    /*grid-template-rows: 1fr 1fr 1fr;*/
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
 }
 
 .idaho-card {
@@ -433,7 +435,7 @@ footer p a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, #river, .home-grid, .rivers-grid {
         display: block;
         height: auto;
     }
@@ -444,13 +446,13 @@ footer p a:hover {
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #river {
         margin-top: 0;
     }
     #hero-msg {
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero-msg, #river-msg h4 {
         display: none;
     }
     .home-title {
@@ -458,6 +460,11 @@ footer p a:hover {
         color: #6f7364;
     }
     .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+
+    .idaho-card, .utah-card, .arizona-card {
         margin: 50px auto;
         width: 60%;
     }
