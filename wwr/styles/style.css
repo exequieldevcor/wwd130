@@ -435,10 +435,15 @@ footer p a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, #river, .home-grid, .rivers-grid {
+    #hero, .home-grid {
         display: block;
         height: auto;
     }
+    #river, .rivers-grid {
+        display: block;
+        height: auto;
+    }
+
     nav, footer {
         flex-direction: column;
     }
@@ -467,6 +472,10 @@ footer p a:hover {
     .idaho-card, .utah-card, .arizona-card {
         margin: 50px auto;
         width: 60%;
+    }
+
+    .text {
+        display: block;
     }
     #background {
         display: none;
