@@ -334,13 +334,13 @@ footer p a:hover {
 .text {
     height: 500px;
     width: 100%;
-    margin:0 ;
+    margin: 0 2rem ;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color:#659fc4;
-    /*display: table;*/
+    background-color:hsl(203, 45%, 58%);
     position: relative;
+    display: table;
 }
 
 .text h2 {
@@ -352,10 +352,11 @@ footer p a:hover {
 .text p {
     color: black;
     font-family: Abyssinica , Helvetica, sans-serif;
-    font-size: 1.2em;
-    margin-left: 20px;
-    /*display: table-cell;*/
+    font-size: 1.2rem;
+    padding: 0 1rem;
     position: absolute;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 header {
