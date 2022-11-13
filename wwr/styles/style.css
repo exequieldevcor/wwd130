@@ -324,7 +324,6 @@ footer p a:hover {
     border: 10px solid #b7c2c9/*#e63946*/;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
-    position: relative;
 }
 
 .waters-img:hover {
