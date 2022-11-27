@@ -146,8 +146,8 @@ main section img {
     padding: 20px 10px 20px 10px;
 }
 
-.card-material, .card-towel, .card-products {
-    margin: 100px 0;
+.material-card, .towel.card, .products-card {
+    margin-bottom: 200px;
 }
 
 
