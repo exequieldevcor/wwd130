@@ -63,7 +63,7 @@ nav a:hover {
 #home-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 #home-img {
@@ -74,7 +74,6 @@ nav a:hover {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
-    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
 
@@ -84,53 +83,32 @@ nav a:hover {
 
 .home-title {
     color: #ffd100;
-    font-family: Kaushan Script , Helvetica, sans-serif;
+    font-family: Kaushan Script, Helvetica, sans-serif;
     font-size: 2.5em;
-    margin-top: 70%;
-}
-
-.msg {
-    background-color: #d6d6d6;  
-    line-height: 1.5em;
-    padding: 35px;
-    margin: 50px 20px 50px 20px;
-    grid-column: 3/11;
-    grid-row: 1/2;
-    box-shadow: 5px 5px 10px whitesmoke;
-}
-
-.msg h1, p {
-    color: #345995;
-    font-family: Noto Sans JP , Helvetica, sans-serif;
-    font-size: 1.5em;
-    padding-bottom: 15px;
+    margin-top: 80%;
 }
 
 main section {
-    text-align: center;   
+    text-align: center;
 }
 
 main section img {
-    box-sizing: border-box;
+    box-sizing: border box;
 }
 
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 80% 10%;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1 fr);
+    grid-template-rows: 40% 20% 40%;
 }
 
 .button-box {
+    position: relative;
     margin-top: 10px;
     text-align: center;
 }
 
-*.book {
+.book {
     background-color: #d6d6d6;
     color: #345995;
     text-decoration: none;
@@ -142,41 +120,59 @@ main section img {
 
 .book:hover {
     background-color: #ffee32;
-    color: #202020;    
-} 
+    color: #202020;
+}
+
+
+.msg {
+    background-color: #d6d6d6;
+    line-height: 1.5em;
+    padding: 35px;
+    margin: 50px 20px 50px 20px;
+    grid-column: 2/10;
+    grid-row: 1/3;
+    box-shadow: 5px 5px 10px whitesmoke;
+}
+
+.msg h1, p {
+    color: #345995;
+    font-family: Noto Sans JP, Helvetica, sans-serif;
+    font-weight: 2.5em;
+    padding: 15px;
+}
 
 .card-img {
     margin: 80px 20px 80px 20px;
     padding: 20px 10px 20px 10px;
 }
 
-.material-card, .towel-card, .products-card {
+.card-material, .card-towel, .card-products {
     margin: 100px 0;
-} 
+}
 
 
 .material-card {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-left: 0px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin-left: 150px;
 }
 
 .towel-card {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-left: 40px;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    margin-left: 180px;
 }
 
 .products-card {
-    grid-column: 5/6;
-    grid-row: 1/2;
-    margin-left: 40px;
+    grid-column: 7/10;
+    grid-row: 3/4;
+    margin-left: 20px;
 }
 
 .cards-img {
     margin-top: 100px;
     margin-bottom: 100px;
-    border: 10px solid #202020 ;
+    border: 10px solid #202020;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -193,7 +189,7 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-    
+
 footer .social img {
     padding-top: 15px;
     width: 60px;   
@@ -218,7 +214,7 @@ footer p a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    #home, .home-grid {
+    #home, .home-grid, .card-grid{
         display: block;
         height: auto;
     }
@@ -227,6 +223,7 @@ footer p a:hover {
         flex-direction: column;
     }
     nav a {
+        flex-direction: column;
         display: block;
         padding: 15px;
     }
@@ -241,10 +238,174 @@ footer p a:hover {
     }
     .material-card, .towel-card, .products-card { 
         margin: 50px auto;
-        width: 60%;
     }
 
     footer {
         margin-top: 25px;
     }
 }
+/*.home-title {
+    color: #ffd100;
+    font-family: Kaushan Script , Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin-top: 70%;
+}
+
+main section {
+    text-align: center;   
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.button-box {
+    text-align: center;
+    position: absolute;
+    top: 230%;
+    left: 4rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.book {
+    background-color: #d6d6d6;
+    color: #345995;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.book:hover {
+    background-color: #ffee32;
+    color: #202020;    
+} 
+
+.msg {
+    display: flex;
+    line-height: 1.5em;
+    padding: 35px;
+    margin: 50px 20px 50px 20px;
+    grid-column: 1/11;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px whitesmoke;
+}
+
+.msg h1 {
+    font-family: Kaushan Script , Helvetica, sans-serif;
+    color: #345995;
+    text-align: center;
+}
+
+.msg p {
+    color: #345995;
+    font-family: Noto Sans JP , Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    text-align: ;
+}
+
+
+.card-img {
+    margin: 80px 20px 80px 20px;
+    padding: 20px 10px 20px 10px;
+}
+
+.material-card {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.towel-card {
+    grid-column: 4/6;
+    grid-row: 3/4;
+}
+
+.products-card {
+    grid-column: 7/9;
+    grid-row: 3/4;
+}
+
+.cards-img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 10px solid #202020 ;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.cards-img:hover {
+    opacity: .7;
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img {
+    padding-top: 15px;
+    width: 60px;   
+}
+
+footer, a {
+    background-color: #202020; 
+    color: #ffd100;
+    text-decoration: none;
+}
+
+footer p {
+    font-family: Noto Sans JP , Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #ffd100;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    background-color: #6f7364;
+    color: #ffd100;
+}
+
+@media screen and (max-width: 900px) {
+    #home, .home-grid, .card-grid{
+        display: block;
+        height: auto;
+    }
+
+    nav, footer {
+        flex-direction: row;
+    }
+    nav a {
+        flex-direction: row;
+        display: block;
+        padding: 15px;
+    }
+   
+    #home-msg {
+        margin-top: 0;
+    }
+ 
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .material-card, .towel-card, .products-card { 
+        margin: 50px auto;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}*/
+
