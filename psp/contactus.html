@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kings Barber Shop | Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="ourteam.html">Our Team</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  
+   </header>
+   <main>
+        <div class="contact_content">
+            <img src="images/barber_2.jpg" alt="Barbershop" class="responsive">
+        </div>
+        <div id="feedback">
+            <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="name">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="name" name="user_name" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="country">Country</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>  
+        </div>
+
+   </main>
+   <footer>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-1.png" alt="fb icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-1.png" alt="instagram icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter-1.png" alt="twitter icon">
+        </a>
+    </div>    
+    <p><a href="contactus.html">Contac Us</a></p>
+    <p>The Kings Barber Shop © 2022 - Roberto Corvalan</p>
+</footer>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }}
+</script>
+    
+</body>
+</html>
+
+
+
+
+    
