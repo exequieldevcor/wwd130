@@ -5,33 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Kings Barber Shop | About Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+  
 </head>
 <body>
-    <div>
     <div id="about-content">
         <header>
-            <a id="logo_link" href="index.html">
-            <img class="logo" src="images/king-3.webp" alt=" The Kings Logo">
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="ourteam.html">Our Team</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="logo-toggle">
+                            <a href="index.html">
+                                <img class="logotype" src="images/king-3.webp" alt=" The Kings Logo">
+                            </a> 
+                            <span class="toggle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="ourteam.html">Our Team</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
         </header>
-        <div id="about">
-            <img id="about-img" src="images/interior.jpg" alt="our salon">
-            <section id="about-msg">
-                <h1 class="about-title">"More than just a Haircut"</h1>
+        <div class="about">
+            <img src="images/interior.jpg" alt="Barbershop" class="about-img">
+            <section id="about_msg">
+                <h1 class="home-title">"LIVE LIKE A KING"</h1>
             </section>
-        </div>
+            <div class="button">
+                <a class="book" href="rates.html">Book an Appointment</a>
+             </div>
+    </div>
     </div>
     <main class="about-grid">
         <section class="about-msg">
-            <div class="button-box">
-                <a class="book" href="rates.html">Book an Appointment</a>
-             </div>
+            <h1>About Us</h1>
             <h4>We believe that going to the barber shop should be more than an errand. It should be an experience. It's important 
                 to us that you get a great haircut, receive remarkable service and build lasting relationships in a comfortable space. 
                 We offer more than a typical barbershop. Boardroom combines a relaxing, sophisticated environment and a friendly, 
@@ -46,8 +61,6 @@
         </div>
     </main>
     <footer>
-        <p>The Kings Barber Shop © 2022 - Roberto Corvalan</p>
-        <p><a href="contactus.html">Contac Us</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook-1.png" alt="fb icon">
@@ -59,8 +72,16 @@
                 <img src="images/twitter-1.png" alt="twitter icon">
             </a>
         </div>    
+        <p><a href="contactus.html">Contac Us</a></p>
+        <p>The Kings Barber Shop © 2022 - Roberto Corvalan</p>
     </footer>
-    </div>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navigation .navbar .logo-toggle .toggle-box").click(function(){
+                $(".navigation .menu").stop().slideToggle();
+            });
+        });
+    </script>
 </body>
 </html>
