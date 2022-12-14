@@ -8,44 +8,37 @@
     <link rel="stylesheet" href="styles/style.css">
   
 </head>
+
 <body>
-    <div id="about-content">
-        <header>
-            <div class="navigation">
-                <div class="container">
-                    <div class="navbar">
-                        <div class="logo-toggle">
-                            <a href="index.html">
-                                <img class="logotype" src="images/king-3.webp" alt=" The Kings Logo">
-                            </a> 
-                            <span class="toggle-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <ul class="menu">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="ourteam.html">Our Team</a></li>
-                            <li><a href="contactus.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-        </header>
-        <div class="about">
-            <img src="images/interior.jpg" alt="Barbershop" class="about-img">
-            <section id="about_msg">
-                <h1 class="home-title">"LIVE LIKE A KING"</h1>
-            </section>
-            <div class="button">
-                <a class="book" href="rates.html">Book an Appointment</a>
-             </div>
-    </div>
-    </div>
-    <main class="about-grid">
-        <section class="about-msg">
+    <div>
+        <div id="about-content">
+            <header>
+              <a id="logo_link" href="index.html">
+                <img class="logo" src="images/king-3.webp" alt=" The Kings Logo">
+              </a>
+              <input type="checkbox" id="check">
+              <label for="check" class="show-menu">
+                &#8801;
+              </label>
+              <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="ourteam.html">Our Team</a>
+                <a href="contactus.html">Contact Us</a>
+                <label for="check" class="hide-menu">
+                  &#215;
+                </label>
+              </nav>
+            </header>
+            <div id="about">
+              <img id="about-img" src="images/interior.jpg" alt="Barber Shop interior">
+              <section id="about-msg">
+                <h1 class="about-title">"LIVE LIKE A KING"</h1>
+              </section>
+            </div>
+          </div>
+    <main>
+        <section class="about-text">
             <h1>About Us</h1>
             <h4>We believe that going to the barber shop should be more than an errand. It should be an experience. It's important 
                 to us that you get a great haircut, receive remarkable service and build lasting relationships in a comfortable space. 
@@ -55,8 +48,11 @@
                 and aim to be an example of unity in The King's Barber Shop. Our store is one to impress everyone who comes to it for the 
                 first time. We guarantee exceptional client service to every client, on every visit. With a welcoming atmosphere, we thrive 
                 to become the most trusted hair salon destination in Trelew.</h4>
+                <div class="button-box">
+                  <a class="book" href="rates.html">Book an Appointment</a>               
+              </div>
         </section>
-        <div class="materials-card">
+        <div>
             <img class="materials-img" src="images/home-1.jpg" alt="our salon">
         </div>
     </main>
@@ -72,16 +68,9 @@
                 <img src="images/twitter-1.png" alt="twitter icon">
             </a>
         </div>    
-        <p><a href="contactus.html">Contac Us</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
         <p>The Kings Barber Shop © 2022 - Roberto Corvalan</p>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".navigation .navbar .logo-toggle .toggle-box").click(function(){
-                $(".navigation .menu").stop().slideToggle();
-            });
-        });
-    </script>
+   </div>
 </body>
 </html>

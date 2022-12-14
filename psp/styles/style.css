@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Kaushan+Script&family=IM+Fell+French+Canon+SC&family=Noto+Sans+JP:wght@500&display=swap');
+/* Home */
 body {
-    font-family: 'Kaushan Script', Helvetica, sans-serif;
-    background-color: #6f7364;
-    margin: 0;
-    padding: 0; 
+  font-family: 'Kaushan Script', Helvetica, sans-serif;
+  background-color: #6f7364;
+  margin: 0;
+  padding: 0;
 }
 
-/* Our Team */
-/*Home content*/
-#team-content {
-  max-width: 1600px ;
+#home-content {
+  max-width: 1600px;
   width: auto;
   margin: 0 auto;
 }
 
 header {
-  height: 120px;
+  height: 140px;
   background-color: #202020;
   padding: 0px 50px;
   color: #ffee32;
@@ -23,40 +22,236 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 #logo_link {
   padding-top: 5px;
   justify-self: center;
   align-self: center;
 }
+
 .logo {
   background-color: #b7c2c9;
-  height: 100px;
+  height: 125px;
   width: 100px;
   border-radius: 40px;
 }
-.menu a{
-  color:#ffee32;
+
+.menu a {
+  color: #ffee32;
   font-size: 22px;
   text-decoration: none;
   padding: 0 15px;
   transition: 0.3s;
 }
-.show-menu, .hide-menu {
+
+.show-menu,
+.hide-menu {
   font-size: 30px;
   cursor: pointer;
   display: none;
   transition: 0.3s;
 }
+
 .show-menu {
   order: 1;
 }
-.menu a:hover, .show-menu:hover, .hide-menu:hover {
+
+.menu a:hover,
+.show-menu:hover,
+.hide-menu:hover {
   background-color: #ffd100;
   color: #202020;
   border-radius: 10px;
 }
+
 #check {
   display: none;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+
+#home-img {
+  width: 100%;
+  height: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#home-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 700px;
+}
+
+#home-msg h1 {
+  text-align: center;
+}
+
+.home-title {
+  color: #ffd100;
+  font-family: "Kaushan Script", Helvetica, sans-serif;
+  font-size: 2.5em;
+}
+.chair-content {
+  margin-top: 120px;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.chair-content img {
+  width: 316px;
+  height: 500px;
+}
+.chair-text h1 {
+  text-align: center;
+  color: #ffd100;
+}
+.chair-text p {
+  font-family: "Noto Sans JP", Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+.button-box {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px 30px;
+}
+.book {
+  background-color: #659fc4;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.book:hover {
+  background-color: #ffd100;
+  color: #202020;    
+}
+
+.home-cards {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.home-cards img {
+  border: 10px solid #202020;
+  transition: transform .5s;
+}
+.home-cards img:hover {
+  opacity: .7;
+  transform: scale(1.1);
+}
+.home-cards div  {
+  padding: 50px 50px;
+}
+
+footer {
+  padding: 25px 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social img {
+  padding-top: 15px;
+  width: 60px;
+}
+
+footer,
+a {
+  background-color: #202020;
+  color: #ffd100;
+  text-decoration: none;
+}
+
+footer p {
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: #ffd100;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+  background-color: #6f7364;
+  color: #ffd100;
+}
+/* About Us */
+#about-content {
+  max-width: 1600px;
+  width: auto;
+  margin: 0 auto;
+}
+#about {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+
+#about-img {
+  width: 100%;
+  height: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#about-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 700px;
+}
+
+#about-msg h1 {
+  text-align: center;
+}
+
+.about-title {
+  color: #ffd100;
+  font-family: "Kaushan Script", Helvetica, sans-serif;
+  font-size: 2.5em;
+}
+.about-text h1 {
+  text-align: left;
+  color: #ffd100;
+  margin: 50px 20px;
+  font-size: 3em;
+}
+
+.about-text h4 {
+  font-family: Noto Sans JP, Helvetica, sans-serif;;
+  font-size: 2em;
+  text-align: center;
+}
+
+.materials-img {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+}
+
+/* Our Team */
+#team-content {
+  max-width: 1600px ;
+  width: auto;
+  margin: 0 auto;
 }
 
 #team {
@@ -66,8 +261,7 @@ header {
 }
 #team-img {
   width: 100%;
-  height: 1000px;
-  filter: grayscale(100%);
+  height: 1020px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -97,7 +291,7 @@ header {
   padding: 15px 30px;
 }
 .book {
-  background-color: #659fc4;
+  background-color: #659fc4; 
   color: black;
   text-align: center;
   text-decoration: none;
@@ -112,11 +306,11 @@ header {
 
 .button-tittle {
   padding-left: 10px;
-  color: #ffd100;
+  color: #ffee32;
   font-family: Noto Sans JP, Helvetica, sans-serif;
   font-size: 1em; 
 }
-/*Team*/
+
 #team-card {
   margin-top: 50px;
   padding: 50px 50px;
@@ -146,7 +340,7 @@ header {
 
 #team-card div h4, #team-card-2 div h4 {
   color: inherit;
-  color: #ffd100;
+  color: #ffee32;
   font-size: 20px;
   margin: 15px 0px;
 }
@@ -154,42 +348,10 @@ header {
   font-family:  Noto Sans JP, Helvetica, sans-serif;
 }
 
-footer {
-  padding: 25px 50px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social img {
-  padding-top: 15px;
-  width: 60px;   
-}
-
-footer, a {
-  background-color: #202020; 
-  color: #ffd100;
-  text-decoration: none;
-}
-
-footer p {
-  font-family: Noto Sans JP , Helvetica, sans-serif;
-  font-size: 1.2em;
-  color: #ffd100;
-}
-
-footer p a:hover {
-  text-decoration: underline;
-  background-color: #6f7364;
-  color: #ffd100;
-}
-
 /* Contact Us*/
 .responsive {
     width: 100%;
     height: auto;
-    filter: grayscale(100%);
   }
 
 /* Style inputs, select elements and textareas */
@@ -249,9 +411,8 @@ input[type=text], select, textarea{
     clear: both;
   }
 
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 900px) {
-    /*Our Team responsive*/
+    /*Home responsive*/
     .show-menu, .hide-menu {
         display: block;
     }
@@ -286,6 +447,24 @@ input[type=text], select, textarea{
     .book {
         padding: 10px;
     }
+    .chair-content {
+      display: block;
+      align-content: center;
+      flex-direction: column;
+    }
+    .chair-content img {
+      display: block;
+      align-content: center;
+    }
+    .home-cards {
+      display: block;
+      align-content: center;
+      flex-direction: column;
+    }
+    .about-text h1 {
+      text-align: center;
+    }
+    /*Our Team responsive*/
     #team-card, #team-card-2 {
         flex-direction: column;
     }
